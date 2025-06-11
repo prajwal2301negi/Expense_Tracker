@@ -20,7 +20,7 @@
 //     '/app/(.*)'               // 💥 This line ensures app actions get the auth context
 //   ],
 
-};
+//};
 import { clerkMiddleware } from '@clerk/nextjs/server'
 
 export default clerkMiddleware()
