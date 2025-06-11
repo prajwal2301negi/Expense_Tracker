@@ -48,6 +48,7 @@ const TransactionList = async () => {
         {transactions?.length === 0 ? (
           <li className="text-sm text-muted-foreground">No transactions yet.</li>
         ) : (
+          // @ts-ignore
           transactions.map((transaction: Transaction) => (
             <TransactionItem key={transaction.id} transaction={transaction} />
           ))
